@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Announcement</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f1f4f9;
+    margin: 0;
+    padding: 40px 15px;
+  }
+
+  .popup {
+    max-width: 420px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 8px 30px #0002;
+    border-top: 5px solid #1769e0;
+  }
+
+  h2 { color: #1769e0; }
+
+  button {
+    background: #1769e0;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="popup">
+    <h2>Important Announcement</h2>
+    <p>Welcome! Here is the information we would
+    like to share with you.</p>
+    <button onclick="this.parentElement.innerHTML =
+      '<h2>Thank you!</h2><p>You may close this page.</p>'">
+      Continue
+    </button>
+  </div>
+</body>
+</html>
